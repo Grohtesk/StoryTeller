@@ -1,0 +1,23 @@
+{% extends '::base.html.twig' %}
+{% block title %}Story Teller{% endblock %}
+
+{% block body -%}
+    {% block titre %}Accueil{% endblock %}
+	<ul>
+	    <li class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+	        <a href="{{ path('Story') }}">
+	            <button type="button" class="btn btn-lg btn-default">Mes Histoires</button>
+	        </a>
+	    </li>
+	    <li class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+	        <a href="{{ path('Story_new') }}">
+	            Nouvelle Histoire
+	        </a>
+	    </li>
+	    <li class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+	        <a href="#">
+	           Infos
+	        </a>
+	    </li>
+	</ul>
+{% endblock %}
