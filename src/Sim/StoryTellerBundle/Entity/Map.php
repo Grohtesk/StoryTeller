@@ -22,6 +22,13 @@ class Map
     private $id;
 
     /**
+     * @var \Story
+     *
+     * @ORM\OneToOne(targetEntity="Story",inversedBy="map")
+     */
+    private $name;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255)
@@ -125,4 +132,3 @@ class Map
         return $this->regions;
     }
 }
-

@@ -22,6 +22,13 @@ class Timeline
     private $id;
 
     /**
+     * @var \Story
+     *
+     * @ORM\OneToOne(targetEntity="Story", inversedBy="story")
+     */
+    private $story;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255)
@@ -156,4 +163,3 @@ class Timeline
         return $this->events;
     }
 }
-

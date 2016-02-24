@@ -46,14 +46,14 @@ class Story
     /**
      * @var \Map
      *
-     * @ORM\OneToOne(targetEntity="Map")
+     * @ORM\OneToOne(targetEntity="Map",mappedBy="story")
      */
     private $map;
 
     /**
      * @var \Timeline
      *
-     * @ORM\OneToOne(targetEntity="Timeline")
+     * @ORM\OneToOne(targetEntity="Timeline",mappedBy="story")
      */
     private $timeline;
 
