@@ -131,6 +131,20 @@ class Story
     }
 
     /**
+     * Add protagonist
+     *
+     * @param \Sim\StoryTellerBundle\Entity\Protagonist $protagonist
+     *
+     * @return Story
+     */
+    public function addProtagonists(\Sim\StoryTellerBundle\Entity\Protagonist $protagonist=null)
+    {
+        $this->protagonists[] = $protagonist;
+
+        return $this;
+    }
+
+    /**
      * Get protagonists
      *
      * @return array
