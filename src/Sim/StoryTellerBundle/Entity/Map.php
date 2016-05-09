@@ -26,7 +26,7 @@ class Map
      *
      * @ORM\OneToOne(targetEntity="Story",inversedBy="map")
      */
-    private $name;
+    private $story;
 
     /**
      * @var string

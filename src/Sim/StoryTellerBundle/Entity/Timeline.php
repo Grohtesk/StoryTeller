@@ -52,6 +52,7 @@ class Timeline
     /**
      * @var array
      *
+     * @ORM\OneToMany(targetEntity="Event", mappedBy="timeline")
      * @ORM\Column(name="events", type="array")
      */
     private $events;

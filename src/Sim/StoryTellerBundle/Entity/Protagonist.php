@@ -28,6 +28,13 @@ class Protagonist
     private $story;
 
     /**
+     * @var array
+     *
+     * @ORM\ManyToMany(targetEntity="Event", mappedBy="protagonists")
+     */
+    private $events;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="firstName", type="string", length=255)
