@@ -25,12 +25,12 @@
                 <td>{{ entity.map }}</td>
                 <td>{{ entity.timeline }}</td>
                 <td>
-                <ul>
+                <ul class="list-inline">
                     <li>
-                        <a href="{{ path('Story_show', { 'id': entity.id }) }}">show</a>
+                        <a class="btn btn-default" href="{{ path('Story_show', { 'id': entity.id }) }}">show</a>
                     </li>
                     <li>
-                        <a href="{{ path('Story_edit', { 'id': entity.id }) }}">edit</a>
+                        <a class="btn btn-info" href="{{ path('Story_edit', { 'id': entity.id }) }}">edit</a>
                     </li>
                 </ul>
                 </td>
@@ -39,9 +39,9 @@
         </tbody>
     </table>
 
-        <ul>
+    <ul class="list-unstyled">
         <li>
-            <a href="{{ path('Story_new') }}">
+            <a class="btn btn-primary" href="{{ path('Story_new') }}">
                 Create a new entry
             </a>
         </li>

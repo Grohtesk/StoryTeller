@@ -24,7 +24,7 @@ class Timeline
     /**
      * @var \Story
      *
-     * @ORM\OneToOne(targetEntity="Story", inversedBy="story")
+     * @ORM\OneToOne(targetEntity="Story", inversedBy="timeline")
      */
     private $story;
 
@@ -67,6 +67,23 @@ class Timeline
     {
         return $this->id;
     }
+
+    /**
+     * @return \Story
+     */
+    public function getStory()
+    {
+        return $this->story;
+    }
+
+    /**
+     * @param \Story $story
+     */
+    public function setStory($story)
+    {
+        $this->story = $story;
+    }
+
 
     /**
      * Set name

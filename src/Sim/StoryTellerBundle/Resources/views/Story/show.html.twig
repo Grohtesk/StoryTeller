@@ -49,17 +49,17 @@
     </table>
     
 
-        <ul class="record_actions">
-    <li>
-        <a href="{{ path('Story') }}">
-            Back to the list
-        </a>
-    </li>
-    <li>
-        <a href="{{ path('Story_edit', { 'id': entity.id }) }}">
-            Edit
-        </a>
-    </li>
-    <li>{{ form(delete_form) }}</li>
-</ul>
+    <ul class="record_actions list-inline">
+        <li>
+            <a class="btn btn-default" href="{{ path('Story') }}">
+                Back to the list
+            </a>
+        </li>
+        <li>
+            <a class="btn btn-warning" href="{{ path('Story_edit', { 'id': entity.id }) }}">
+                Edit
+            </a>
+        </li>
+        <li>{{ form(delete_form) }}</li>
+    </ul>
 {% endblock %}

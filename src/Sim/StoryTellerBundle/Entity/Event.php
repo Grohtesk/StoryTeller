@@ -27,12 +27,12 @@ class Event
    * @ORM\ManyToMany(targetEntity="Protagonist",inversedBy="events")
    * @ORM\JoinTable(name="events_protagonist")
    */
-   private $protagonists
+   private $protagonists;
 
   /**
    * @var string
    *
-   * @ORM\Column(name="LastName", type="string", length=255)
+   * @ORM\Column(name="name", type="string", length=255)
    */
   private $name;
 
@@ -43,5 +43,60 @@ class Event
    */
   private $description;
 
+    /**
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @return array
+     */
+    public function getProtagonists()
+    {
+        return $this->protagonists;
+    }
+
+    /**
+     * @param array $protagonists
+     */
+    public function setProtagonists($protagonists)
+    {
+        $this->protagonists = $protagonists;
+    }
+
+    /**
+     * @return string
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param string $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription()
+    {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     */
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
 }
 ?>

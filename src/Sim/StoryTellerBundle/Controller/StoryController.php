@@ -21,6 +21,7 @@ class StoryController extends Controller
     /**
      * Lists all Story entities.
      *
+     * @return array
      * @Route("/", name="Story")
      * @Method("GET")
      * @Template()
