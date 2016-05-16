@@ -29,6 +29,13 @@ class Map
     private $story;
 
     /**
+     * @var array
+     *
+     * @ORM\OneToMany(targetEntity="Place", mappedBy="map")
+     */
+    private $places;
+
+    /**
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255)

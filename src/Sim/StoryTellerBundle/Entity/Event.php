@@ -29,6 +29,14 @@ class Event
    */
    private $protagonists;
 
+   /**
+    * @var array
+    *
+    * @ORM\ManyToMany(targetEntity="Place",inversedBy="events")
+    * @ORM\JoinTable(name="events_places")
+    */
+    private $places;
+
   /**
    * @var string
    *
