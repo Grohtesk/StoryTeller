@@ -35,8 +35,25 @@ class Place
    */
   private $events;
 
+  /**
+   * @var string
+   *
+   * @ORM\Column(name="name", type="string", length=255)
+   */
   private $name;
+
+  /**
+   * @var string
+   *
+   * @ORM\Column(name="description", type="text")
+   */
   private $description;
+
+  /**
+   * @var string
+   *
+   * @ORM\Column(name="img", type="string", length=255)
+   */
   private $img;
 
 
