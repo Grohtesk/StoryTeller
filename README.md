@@ -16,3 +16,4 @@ A Symfony project created on October 25, 2015, 2:50 pm.
  * create a combinason of timeline and map to see characters's movement on the map for a given timestamp
 
 I hope i can do all this one day
+and I will
